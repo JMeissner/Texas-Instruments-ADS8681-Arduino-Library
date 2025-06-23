@@ -105,3 +105,6 @@ void loop() {
   delay(1000);
 }
 ```
+
+## Contribution
+This project is largely based on the discontinued work from Adam Procio (Sponge5): https://github.com/Sponge5/ADS8681
