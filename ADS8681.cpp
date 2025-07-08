@@ -33,7 +33,7 @@ uint32_t ADS8681::spiSend(enum ads868x_spi_command command,
 uint32_t ADS8681::selectRange(uint16_t range_select)
 {
 	uint32_t range_sel_reg = 0;
-	range_sel_reg |= ((uint32_t) range_sel & ADS8681_RANGE_SEL_MASK) << ADS8681_RANGE_SEL_SHIFT;
+	range_sel_reg |= ((uint32_t) range_select & ADS8681_RANGE_SEL_MASK) << ADS8681_RANGE_SEL_SHIFT;
 	return (uint32_t)(this->spiSend(ADS868X_SPI_COMMAND_WRITE_FULL, ADS868X_REGISTER_ADDRESS_RANGE_SEL, range_sel_reg));
 }
 
